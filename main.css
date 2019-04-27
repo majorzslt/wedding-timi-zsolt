@@ -182,15 +182,76 @@ a:hover {
   font-family: 'Questrial', sans-serif;
 }
 
-/* text align an top margin for h2 */
+.program-wrapper {
+  padding: 1rem;
+}
+
+/* text align for h2 */
 .program h2 {
   text-align: center;
 }
 
-/* wrapper from program section */
-.program-wrapper {
-  padding: 1rem;
+
+
+/*-------------------------
+          LOCATIONS
+-------------------------*/
+
+
+
+/* img size */
+.locations img {
+  height: 7rem;
 }
+
+/* bold headers */
+.locations h3 {
+  font-weight: 700;
+}
+
+/* font family */
+.locations div {
+  font-family: 'Questrial', sans-serif;
+}
+
+/* location icon */
+.location_icon {
+  filter: grayscale(100%);
+}
+
+/* horizontal line after every section */
+.location::after {
+  display: block;
+  content: "";
+  background-color: #444349;
+  height: .2rem;
+  width: 25%;
+  margin: 1.5rem auto;
+}
+
+
+
+/*-------------------------
+          GIFTS
+-------------------------*/
+
+
+
+/* width 100% vw, text aling and background  */
+.gifts {
+  width: 100%;
+  background: hsla(100, 0%, 0%, .6);
+  color: #d2ba87;
+  font-family: 'Questrial', sans-serif;
+}
+
+/* img size */
+.gifts img {
+  height: 7rem;
+}
+
+
+
 
 
 
