@@ -167,5 +167,41 @@ a:hover {
 
 
 
+/*-------------------------
+          PROGRAM
+-------------------------*/
+
+
+
+/* width 100% vw, text aling and background  */
+.program {
+  width: 100%;
+  text-align: left;
+  background: hsla(100, 0%, 0%, .6);
+  color: #d2ba87;
+  font-family: 'Questrial', sans-serif;
+}
+
+/* text align an top margin for h2 */
+.program h2 {
+  text-align: center;
+}
+
+/* wrapper from program section */
+.program-wrapper {
+  padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
