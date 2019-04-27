@@ -33,7 +33,7 @@ img {
 /* Set default background image, font, size and text color */
 body {
   background: url('assets/wedding-background.jpg') repeat center;
-  font-family: 'Old Standard TT', serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 1.125rem;
   line-height: 1.5rem;
   color: #444349;
@@ -45,7 +45,6 @@ h2 {
   font-family: 'Alex Brush', cursive;
 }
 
-
 /* h2 and h3 font size */
 h2 {
   font-size: 3rem;
@@ -55,7 +54,6 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
-
 
 /* links color and hover */
 a {
@@ -77,12 +75,17 @@ a:hover {
 
 
 .cover {
-  background: url('assets/wedding-cover.png') no-repeat center;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
+  background: url('assets/wedding-cover.jpg') no-repeat 30% center/cover;
   display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .cover {
+    background: url('assets/wedding-cover.jpg') no-repeat center/cover;
+  }
 }
 
 .header-wrapper {
@@ -98,6 +101,14 @@ a:hover {
   background: hsla(100, 0%, 0%, .5);
 }
 
+@media (min-width: 768px) {
+  .header-text {
+    padding: 1.25rem;
+    width: 50%;
+    border-radius: 5px;
+  }
+}
+
 /* font size, color for headline and tagline */
 .headline {
   font-size: 3rem;
@@ -106,16 +117,37 @@ a:hover {
   /* To negate the effect of the single-direction margin declaration. */
 }
 
+@media (min-width: 768px) {
+  .headline {
+    font-size: 4rem;
+  }
+}
+
 .tagline {
   font-size: 1.5rem;
   letter-spacing: .2rem;
   line-height: 2rem;
 }
 
+@media (min-width: 768px) {
+  .tagline {
+    font-size: 1.675rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+  }
+}
+
 /* margin bottom */
 .tagline,
 .headline {
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .tagline,
+  .headline {
+    margin-bottom: 3rem;
+  }
 }
 
 /* horizontal line after tagline - pseudo-element */
@@ -173,124 +205,129 @@ a:hover {
 
 
 
-/* width 100% vw, text aling and background  */
+/* width 100%, text align and background  */
 .program {
   width: 100%;
-  text-align: left;
+  text-align: center;
   background: hsla(100, 0%, 0%, .6);
   color: #d2ba87;
   font-family: 'Questrial', sans-serif;
 }
 
-.program-wrapper {
-  padding: 1rem;
-}
+  /* text align */
+  .program h2 {
+    text-align: center;
+  }
 
-/* text align for h2 */
-.program h2 {
-  text-align: center;
-}
+  /* italic tagline */
+  .program p {
+    font-style: italic;
+  }
+
+  /* wrapper from program section */
+  .program-wrapper {
+    padding: 1rem;
+  }
 
 
 
-/*-------------------------
+  /*-------------------------
           LOCATIONS
 -------------------------*/
 
 
 
-/* img size */
-.locations img {
-  height: 7rem;
-}
+  /* img size */
+  .locations img {
+    height: 7rem;
+  }
 
-/* bold headers */
-.locations h3 {
-  font-weight: 700;
-}
+  /* bold headers */
+  .locations h3 {
+    font-weight: 700;
+  }
 
-/* font family */
-.locations div {
-  font-family: 'Questrial', sans-serif;
-}
+  /* font family */
+  .locations div {
+    font-family: 'Old Standard TT', serif;
+  }
 
-/* location icon */
-.location_icon {
-  filter: grayscale(100%);
-}
+  /* location icon */
+  .location_icon {
+    filter: grayscale(100%);
+  }
 
-/* horizontal line after every section */
-.location::after {
-  display: block;
-  content: "";
-  background-color: #444349;
-  height: .2rem;
-  width: 25%;
-  margin: 1.5rem auto;
-}
+  /* horizontal line after every section */
+  .location::after {
+    display: block;
+    content: "";
+    background-color: #444349;
+    height: .2rem;
+    width: 25%;
+    margin: 1.5rem auto;
+  }
+
+  @media (min-width: 768px) {
+    .location {
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+
+    .location::after {
+      display: none;
+    }
+  }
 
 
 
-/*-------------------------
+  /*-------------------------
           GIFTS
 -------------------------*/
 
 
 
-/* width 100% vw, text aling and background  */
-.gifts {
-  width: 100%;
-  background: hsla(100, 0%, 0%, .6);
-  color: #d2ba87;
-  font-family: 'Questrial', sans-serif;
-}
+  /* width 100%, text align and background  */
+  .gifts {
+    width: 100%;
+    background: hsla(100, 0%, 0%, .6);
+    color: #d2ba87;
+    font-family: 'Old Standard TT', serif;
+  }
 
-/* img size */
-.gifts img {
-  height: 7rem;
-}
+  /* img size */
+  .gifts img {
+    height: 7rem;
+  }
 
 
 
-/*-------------------------
+  /*-------------------------
           FOOTER
 -------------------------*/
 
 
-/* footer default values */
-footer {
-  display: table;
-  height: 10vh;
-  width: 100%;
-  text-align: center;
-  padding: 1rem;
-  font-size: .875rem;
-  background-color: #606060;
-  color: #fff;
-}
 
-.footer-wrapper {
-  display: table-cell;
-  vertical-align: middle;
-  padding: .5rem 1rem
-}
+  /* footer default values */
+  footer {
+    display: table;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: .875rem;
+    background-color: #606060;
+    color: #fff;
+  }
 
-/* remove margin bottom */
-footer p {
-  margin-bottom: 0;
-}
+  .footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .5rem 1rem
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* remove margin bottom */
+  footer p {
+    margin-bottom: 0;
+  }
