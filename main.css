@@ -1,0 +1,73 @@
+/*-------------------------
+          GENERAL
+-------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Single direction margin declaration */
+h1,
+h2,
+h3,
+ul,
+ol,
+p,
+img {
+  margin-bottom: 2rem;
+}
+
+/* Set default size for containers */
+.quotation,
+.locations,
+.program,
+.gifts,
+.contact,
+.footer {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+/* Set default background image, font, size and text color */
+body {
+  background: url('assets/wedding-background.jpg') repeat center;
+  font-family: 'Old Standard TT', serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #444349;
+}
+
+/* Set default font family for h1 and h2 */
+h1,
+h2 {
+  font-family: 'Alex Brush', cursive;
+}
+
+
+/* h2 and h3 font size */
+h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+
+/* links color and hover */
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .20s ease-in-out;
+}
+
+
+
+
