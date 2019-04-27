@@ -149,3 +149,23 @@ a:hover {
 
 
 
+/*-------------------------
+          QUOTATION
+-------------------------*/
+
+
+
+/* img size */
+.quotation img {
+  height: 7rem;
+}
+
+/* remove extra bottom margin */
+.quotation p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
